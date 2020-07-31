@@ -12,7 +12,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button b1,b2,b3,b4,b5,b6,b7,b8;
-    ImageView i;
+    private ImageView i;
+    private Toast mm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,""+li.sleep(),Toast.LENGTH_LONG).show();
+                mm.makeText(MainActivity.this,""+li.sleep(),mm.LENGTH_SHORT).show();
                 i.setImageResource(R.drawable.lionsleep);
             }
         });
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,""+li.eat(),Toast.LENGTH_LONG).show();
+                mm.makeText(MainActivity.this,""+li.eat(),mm.LENGTH_SHORT).show();
                 i.setImageResource(R.drawable.lioneat);
             }
         });
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,""+li.cub(),Toast.LENGTH_LONG).show();
+                mm.makeText(MainActivity.this,""+li.cub(),mm.LENGTH_SHORT).show();
                 i.setImageResource(R.drawable.lioncub);
             }
         });
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,""+li.girl(),Toast.LENGTH_LONG).show();
+                mm.makeText(MainActivity.this,""+li.girl(),mm.LENGTH_SHORT).show();
                 i.setImageResource(R.drawable.lionwoman);
             }
         });
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,""+wo.sleep(),Toast.LENGTH_LONG).show();
+                mm.makeText(MainActivity.this,""+wo.sleep(),mm.LENGTH_SHORT).show();
                 i.setImageResource(R.drawable.wolfsleep);
             }
         });
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,""+wo.eat(),Toast.LENGTH_LONG).show();
+                mm.makeText(MainActivity.this,""+wo.eat(),mm.LENGTH_SHORT).show();
                 i.setImageResource(R.drawable.wolfeat);
             }
         });
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,""+wo.cub(),Toast.LENGTH_LONG).show();
+                mm.makeText(MainActivity.this,""+wo.cub(),mm.LENGTH_SHORT).show();
                 i.setImageResource(R.drawable.wolfpup);
             }
         });
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,""+wo.girl(),Toast.LENGTH_LONG).show();
+                mm.makeText(MainActivity.this,""+wo.girl(),mm.LENGTH_SHORT).show();
                 i.setImageResource(R.drawable.wolfwoman);
             }
         });
